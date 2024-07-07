@@ -8,7 +8,7 @@ const router= Router()
 
 router.use(homeRouter, userRouter,productsRouter)
 router.use(logger,(req,res,next)=>{
-    console.log(`finish session`)
+    console.log(`finish in session`)
     next()
 })
 
